@@ -1,1 +1,4 @@
-gcc -o gyb gyb.c
+mkdir -p tmp
+bytes help_message help.md tmp/help.h
+nasm -f elf64 run.asm -o tmp/run.o
+gcc -o gyb gyb.c tmp/run.o -z noexecstack

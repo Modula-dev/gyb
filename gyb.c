@@ -11,6 +11,12 @@
 #include "file.h"           // dependency for file i/o
 #include "run.h"            // bytecode machine
 
-int main (int argc, char **argv) {
+#include "tmp/help.h"
 
+const char version_info[] = "gyb v 0.0.0, (C) 2025 Modula.dev\n<https://modula.dev>\n";
+
+int main (int argc, char **argv) {
+    if ( argc == 1 ) { printf(version_info); printf(help_message); exit(1); }
+    char *references[16]; 
+    bool run = false; bool link = false;   
 }

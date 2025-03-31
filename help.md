@@ -1,0 +1,3 @@
+- make          gyb {output} {object} [-t {target}]
+- run           gyb -r {object}
+- link          gyb -l {output} {list of inputs}
